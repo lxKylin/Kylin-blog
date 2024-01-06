@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>晚风予星</title><meta name="author" content="Kylin"><meta name="copyright" content="Kylin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前端工程师">
+<meta property="og:type" content="website">
+<meta property="og:title" content="晚风予星">
+<meta property="og:url" content="https://lxkylin.github.io/Kylin-blog/index.html">
+<meta property="og:site_name" content="晚风予星">
+<meta property="og:description" content="前端工程师">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lxkylin.github.io/Kylin-blog/img/avatar.jpeg">
+<meta property="article:author" content="Kylin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lxkylin.github.io/Kylin-blog/img/avatar.jpeg"><link rel="shortcut icon" href="/Kylin-blog/img/favicon.png"><link rel="canonical" href="https://lxkylin.github.io/Kylin-blog/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/Kylin-blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>const GLOBAL_CONFIG = {
+  root: '/Kylin-blog/',
+  algolia: undefined,
+  localSearch: {"path":"/Kylin-blog/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '晚风予星',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-01-06 13:56:06'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/Kylin-blog/img/avatar.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/Kylin-blog/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/Kylin-blog/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/Kylin-blog/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Kylin-blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/fujianjian.jpg')"><nav id="nav"><span id="blog-info"><a href="/Kylin-blog/" title="晚风予星"><span class="site-name">晚风予星</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Kylin-blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/Kylin-blog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">晚风予星</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/lxKylin" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/Kylin-blog/2024/01/05/el-tabs%E7%82%B9%E5%87%BB%E6%97%B6%E4%BC%A0%E9%80%92item%E6%89%80%E6%9C%89%E5%86%85%E5%AE%B9/" title="el-tabs点击时传递item所有内容"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/81.jpg" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="el-tabs点击时传递item所有内容"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2024/01/05/el-tabs%E7%82%B9%E5%87%BB%E6%97%B6%E4%BC%A0%E9%80%92item%E6%89%80%E6%9C%89%E5%86%85%E5%AE%B9/" title="el-tabs点击时传递item所有内容">el-tabs点击时传递item所有内容</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-05T14:38:34.000Z" title="发表于 2024-01-05 14:38:34">2024-01-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Kylin-blog/categories/elementUI/">elementUI</a></span></div><div class="content">
+添加：:value=&quot;JSON.stringify(item)&quot;
+&lt;el-tabs v-model=&quot;activeName&quot; @tab-click=&quot;handleClick&quot;&gt;  &lt;el-tab-pane    v-for=&quot;(item, index) in menuItems&quot;    :key=&quot;index&quot;    :label=&quot;item.moduleName&quot;    :value=&quot;JSON.stringify(item)&quot;    :name=&quot;item.moduleName&quot;  &gt;&lt;/el-tab-pane&gt;&lt;/el-tabs&gt;
+
+使用el.$attrs.value
+
+
+handleClick(el) &#123;  console.log(JSON.parse(el.$attrs.value));&#125;,
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/Kylin-blog/2024/01/04/el-menu%E6%8A%98%E5%8F%A0%E6%97%B6%E7%9A%84bug/" title="el-menu折叠时的bug"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/81.jpg" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="el-menu折叠时的bug"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2024/01/04/el-menu%E6%8A%98%E5%8F%A0%E6%97%B6%E7%9A%84bug/" title="el-menu折叠时的bug">el-menu折叠时的bug</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-04T22:51:06.000Z" title="发表于 2024-01-04 22:51:06">2024-01-04</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/bug/">bug</a></span></div><div class="content">
+如图所示：在折叠时，菜单标题和右边的箭头没有消失
+
+解决方法：
+
+style不加scoped/*由于 element-ui 的&lt;el-menu&gt;标签本身希望里面嵌套的是&lt;el-menu-item&gt;,&lt;el-submenu&gt;,&lt;el-menu-item-group&gt;之一，但是却嵌套了&lt;div&gt;,而导致收折就隐藏不了文字*//*隐藏文字*/.el-menu--collapse .el-submenu__title span &#123;  display: none;&#125;/*隐藏 &gt; */.el-menu--collapse .el-submenu__title .el-submenu__icon-arrow &#123;  display: none;&#125;
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/Kylin-blog/2023/12/28/nginx%E7%9F%A5%E8%AF%86%E7%82%B9/" title="nginx知识点"><img class="post-bg" src="https://n.sinaimg.cn/spider20191218/637/w989h448/20191218/b9f2-ikvenft8456517.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="nginx知识点"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/28/nginx%E7%9F%A5%E8%AF%86%E7%82%B9/" title="nginx知识点">nginx知识点</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-28T17:38:36.000Z" title="发表于 2023-12-28 17:38:36">2023-12-28</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2/">前端部署</a></span></div><div class="content">反向代理
+proxy_pass用于转发请求
+
+server &#123;    listen       8080; #对外监听端口  server_name  localhost; #主机名称  #请求路径  location / &#123;    root   html; # Nginx默认值    index  index.html index.htm;  &#125;  # 静态化配置，所有静态请求都转发给 nginx 处理，存放目录为 my-project  location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|js|css)$ &#123;    root /usr/local/var/www/my-project; # 静态请求所代理到的根目录  &#125;  # 动态请求匹配到path为&#x27;node&#x27;的就转发到8002端口处理  location /node/ &#123;      proxy_pass http://localhost:8002; # 充当服务代理  &#125;&#125;
+
+ro ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/Kylin-blog/2023/12/26/scss%E7%9A%84%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/" title="scss的基础使用"><img class="post-bg" src="https://p3.itc.cn/q_70/images01/20220516/44fbe04107a94678a7b42d0f83115df9.jpeg" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="scss的基础使用"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/26/scss%E7%9A%84%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/" title="scss的基础使用">scss的基础使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-26T14:16:28.000Z" title="发表于 2023-12-26 14:16:28">2023-12-26</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span></div><div class="content">
+Sass（Syntactically Awesome Stylesheets）和 SCSS（Sassy CSS）都是用于样式表的预处理器，它们扩展了普通的 CSS 语法，提供了更多的功能和灵活性。以下是它们的主要区别：
+
+语法格式： 
+Sass 使用严格的缩进来表示代码块，类似于 Python。
+SCSS 使用更接近于常规 CSS 的花括号和分号的语法。
+
+
+文件扩展名： 
+Sass 文件使用 .sass 扩展名。
+SCSS 文件使用 .scss 扩展名。
+
+
+语法风格： 
+Sass 更加简洁，省略了许多常见的符号，如花括号和分号。
+SCSS 更接近于常规的 CSS 语法，因此更容易学习和迁移。
+
+
+兼容性： 
+由于 SCSS 的语法更接近于 CSS，因此它更容易被现有的 CSS 代码接受，并且可以逐步地将现有的 CSS 文件重命名为 SCSS 并继续工作。
+Sass 的语法相对较新，可能需要一些时间来适应。
+
+
+选择： 
+选择使用 Sass 还是 SCSS 取决于个人偏好和项目要求。一些开发者喜欢 Sass 的简洁性，而另一些喜欢 SCSS 的类似 CSS 的语法。
+
+
+
+在实际使 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/Kylin-blog/2023/12/25/npm-script/" title="小知识｜npm scripts 如何将参数正确传递运行的脚本"><img class="post-bg" src="https://image.3001.net/images/20211118/1637224478_6196101ee1f8215f6ff45.png%21small" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="小知识｜npm scripts 如何将参数正确传递运行的脚本"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/25/npm-script/" title="小知识｜npm scripts 如何将参数正确传递运行的脚本">小知识｜npm scripts 如何将参数正确传递运行的脚本</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-25T16:04:41.000Z" title="发表于 2023-12-25 16:04:41">2023-12-25</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/%E5%B0%8F%E8%AE%B0/">小记</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Kylin-blog/tags/%E8%84%9A%E6%9C%AC/">脚本</a></span></div><div class="content">问题
+在公司项目的package.json文件中有个scripts命令：npm run component:add，在命令行输入npm run component:add -g aa -n bb -d cc后，显示的命令变成了node ./packages/scripts component:add aa bb ccc，-都不见了，甚至报错了
+
+解决
+这里需要用到--，将参数传递给实际的命令
+
+npm run component:add -- -g aa -n bb -d cc
+
+在npm scripts中，--的作用是告诉npm，之后的参数应该传递给运行的脚本，而不是npm自身。当运行npm run script-name -- arg1 arg2时，--之后的参数会被传递给script-name对应的脚本。
+这是因为npm在运行脚本时，它会收集所有在npm run命令之后的参数，并将它们传递给实际执行的命令。但是，如果实际执行的命令也以-开头，npm可能会尝试解析这些参数，而不将它们传递给运行的脚本。
+通过使用--，将告诉npm停止解析参数，并将其余的参数传递给脚本。这样，你就可以 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/Kylin-blog/2023/12/25/npm-workspaces/" title="npm-workspaces"><img class="post-bg" src="https://oss-cn-hangzhou.aliyuncs.com/codingsky/cdn/img/2020-01-14/199f28ab01b68d6055185cb291412a98.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="npm-workspaces"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/25/npm-workspaces/" title="npm-workspaces">npm-workspaces</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-25T11:05:28.000Z" title="发表于 2023-12-25 11:05:28">2023-12-25</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="content">npm workspaces
+指的是从单个顶级根包中管理本地文件系统中的多个包
+npm、yarn、pnpm都提供了对workspaces的支持
+
+初始化
+创建项目文件夹
+对其进行初始化：npm init -y
+
+&#123;  &quot;name&quot;: &quot;npm-workspaces&quot;,  &quot;version&quot;: &quot;1.0.0&quot;,  &quot;description&quot;: &quot;&quot;,  &quot;main&quot;: &quot;index.js&quot;,  &quot;scripts&quot;: &#123;    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;  &#125;,  &quot;keywords&quot;: [],  &quot;author&quot;: &quot;&quot;,  &quot;license&quot;: & ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/Kylin-blog/2023/12/22/typescript%E7%AC%94%E8%AE%B0-day5/" title="typescript笔记-day5"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/FOT6ou.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="typescript笔记-day5"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/22/typescript%E7%AC%94%E8%AE%B0-day5/" title="typescript笔记-day5">typescript笔记-day5</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-22T17:22:01.000Z" title="发表于 2023-12-22 17:22:01">2023-12-22</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/typescript/">typescript</a></span></div><div class="content">类型查询操作符
+typeof：用于基本类型
+
+类型守卫is
+is 关键字 + 预期类型。如果这个函数成功返回为 true，那么 is 关键字前这个入参的类型，就会被这个类型守卫调用，方便后续的类型控制流分析。
+
+function isString(input: unknown): input is string &#123;  return typeof input === &quot;string&quot;;&#125;function foo(input: string | number) &#123;  if (isString(input)) &#123;    // 正确了    (input).replace(&quot;linbudu&quot;, &quot;linbudu599&quot;)  &#125;  if (typeof input === &#x27;number&#x27;) &#123; &#125;  // ...&#125;
+
+in
+通过 key in object 的方式来判断 key 是否存在于 object 或其原型链上（返回 true 说 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/Kylin-blog/2023/12/21/typescript%E7%AC%94%E8%AE%B0-day4/" title="typescript笔记-day4"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/FOT6ou.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="typescript笔记-day4"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/21/typescript%E7%AC%94%E8%AE%B0-day4/" title="typescript笔记-day4">typescript笔记-day4</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-21T14:32:12.000Z" title="发表于 2023-12-21 14:32:12">2023-12-21</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/typescript/">typescript</a></span></div><div class="content">类型别名
+type用于定义类型别名
+
+// 联合类型type IDType = string | number | boolean// 对象类型type PointType = &#123;  x: number  y: number  z?: number&#125;// 函数类型type Handler = (e: Event) =&gt; void;const clickHandler: Handler = (e) =&gt; &#123; &#125;;const moveHandler: Handler = (e) =&gt; &#123; &#125;;const dragHandler: Handler = (e) =&gt; &#123; &#125;;function printId(id: IDType) &#123;&#125;function printPoint(point: PointType) &#123;&#125;
+
+
+工具类型
+类型别名可以这么声明自己能够接受泛型（我称之为泛型坑位）
+泛型参数的名称（上面的 T ）也不是固定的。通常我们使用大写的 T ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/Kylin-blog/2023/12/20/typescript%E7%AC%94%E8%AE%B0-day3/" title="typescript笔记-day3"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/FOT6ou.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="typescript笔记-day3"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/20/typescript%E7%AC%94%E8%AE%B0-day3/" title="typescript笔记-day3">typescript笔记-day3</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-20T14:36:13.000Z" title="发表于 2023-12-20 14:36:13">2023-12-20</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/typescript/">typescript</a></span></div><div class="content">Top Type
+any
+
+会跳过类型检查器对值的检查，任何值都可以赋值给any类型，any类型的值也可以赋值给任何类型
+可以给一个any类型的变量赋值任何的值，比如数字、字符串的值；
+
+const arr: any[] = [&quot;111&quot;, 234] //不推荐
+
+unknown：
+
+它用于描述类型不确定的变量
+任何类型的值都可以赋值给unknown类型，但unknow类型只能赋值给any和unknown类型
+any类型可以赋值给任意类型
+
+
+
+let notSure: unknown = 4;let uncertain: any = notSure; // OKlet notSure: any = 4;let uncertain: unknown = notSure; // OKlet notSure: unknown = 4;let uncertain: number = notSure; // Error
+
+Bottom Type
+never
+是整个类型系统层级中最底层的类型。
+和 null、undefined 一样，它是所有类型的子类型，但只有 never  ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/Kylin-blog/2023/12/19/typescript%E7%AC%94%E8%AE%B0-day2/" title="typescript笔记-day2"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/FOT6ou.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="typescript笔记-day2"></a></div><div class="recent-post-info"><a class="article-title" href="/Kylin-blog/2023/12/19/typescript%E7%AC%94%E8%AE%B0-day2/" title="typescript笔记-day2">typescript笔记-day2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-19T10:46:34.000Z" title="发表于 2023-12-19 10:46:34">2023-12-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Kylin-blog/tags/typescript/">typescript</a></span></div><div class="content">函数函数类型签名
+描述了函数入参类型与函数返回值类型
+要么直接在函数中进行参数和返回值的类型声明，要么使用类型别名将函数声明抽离出来：
+
+const foo = function (name: string): number &#123;  return name.length&#125;type FuncFoo = (name: string) =&gt; numberconst foo: FuncFoo = (name) =&gt; &#123;  return name.length&#125;
+
+重载
+在某些逻辑较复杂的情况下，函数可能有多组入参类型和返回值类型：
+
+function func(foo: number, bar?: boolean): string | number &#123;  if (bar) &#123;    return String(foo);  &#125; else &#123;    return foo * 599;  &#125;&#125;// 重载签名1function func(foo: number, bar: true): st ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/Kylin-blog/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/Kylin-blog/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/Kylin-blog/img/avatar.jpeg" onerror="this.onerror=null;this.src='/Kylin-blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Kylin</div><div class="author-info__description">前端工程师</div></div><div class="card-info-data site-data is-center"><a href="/Kylin-blog/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/Kylin-blog/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/Kylin-blog/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lxKylin"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lxKylin" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Kylin-blog/2024/01/05/el-tabs%E7%82%B9%E5%87%BB%E6%97%B6%E4%BC%A0%E9%80%92item%E6%89%80%E6%9C%89%E5%86%85%E5%AE%B9/" title="el-tabs点击时传递item所有内容"><img src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/81.jpg" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="el-tabs点击时传递item所有内容"/></a><div class="content"><a class="title" href="/Kylin-blog/2024/01/05/el-tabs%E7%82%B9%E5%87%BB%E6%97%B6%E4%BC%A0%E9%80%92item%E6%89%80%E6%9C%89%E5%86%85%E5%AE%B9/" title="el-tabs点击时传递item所有内容">el-tabs点击时传递item所有内容</a><time datetime="2024-01-05T14:38:34.000Z" title="发表于 2024-01-05 14:38:34">2024-01-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Kylin-blog/2024/01/04/el-menu%E6%8A%98%E5%8F%A0%E6%97%B6%E7%9A%84bug/" title="el-menu折叠时的bug"><img src="https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/81.jpg" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="el-menu折叠时的bug"/></a><div class="content"><a class="title" href="/Kylin-blog/2024/01/04/el-menu%E6%8A%98%E5%8F%A0%E6%97%B6%E7%9A%84bug/" title="el-menu折叠时的bug">el-menu折叠时的bug</a><time datetime="2024-01-04T22:51:06.000Z" title="发表于 2024-01-04 22:51:06">2024-01-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Kylin-blog/2023/12/28/nginx%E7%9F%A5%E8%AF%86%E7%82%B9/" title="nginx知识点"><img src="https://n.sinaimg.cn/spider20191218/637/w989h448/20191218/b9f2-ikvenft8456517.png" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="nginx知识点"/></a><div class="content"><a class="title" href="/Kylin-blog/2023/12/28/nginx%E7%9F%A5%E8%AF%86%E7%82%B9/" title="nginx知识点">nginx知识点</a><time datetime="2023-12-28T17:38:36.000Z" title="发表于 2023-12-28 17:38:36">2023-12-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Kylin-blog/2023/12/26/scss%E7%9A%84%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/" title="scss的基础使用"><img src="https://p3.itc.cn/q_70/images01/20220516/44fbe04107a94678a7b42d0f83115df9.jpeg" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="scss的基础使用"/></a><div class="content"><a class="title" href="/Kylin-blog/2023/12/26/scss%E7%9A%84%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/" title="scss的基础使用">scss的基础使用</a><time datetime="2023-12-26T14:16:28.000Z" title="发表于 2023-12-26 14:16:28">2023-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Kylin-blog/2023/12/25/npm-script/" title="小知识｜npm scripts 如何将参数正确传递运行的脚本"><img src="https://image.3001.net/images/20211118/1637224478_6196101ee1f8215f6ff45.png%21small" onerror="this.onerror=null;this.src='/Kylin-blog/img/404.jpg'" alt="小知识｜npm scripts 如何将参数正确传递运行的脚本"/></a><div class="content"><a class="title" href="/Kylin-blog/2023/12/25/npm-script/" title="小知识｜npm scripts 如何将参数正确传递运行的脚本">小知识｜npm scripts 如何将参数正确传递运行的脚本</a><time datetime="2023-12-25T16:04:41.000Z" title="发表于 2023-12-25 16:04:41">2023-12-25</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/Kylin-blog/categories/elementUI/"><span class="card-category-list-name">elementUI</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Kylin-blog/categories/%E6%B5%8B%E8%AF%95/"><span class="card-category-list-name">测试</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/Kylin-blog/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 1.1em; color: #999">工具</a> <a href="/Kylin-blog/tags/typescript/" style="font-size: 1.5em; color: #99a9bf">typescript</a> <a href="/Kylin-blog/tags/bug/" style="font-size: 1.1em; color: #999">bug</a> <a href="/Kylin-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">学习笔记</a> <a href="/Kylin-blog/tags/%E5%89%8D%E7%AB%AF%E9%83%A8%E7%BD%B2/" style="font-size: 1.1em; color: #999">前端部署</a> <a href="/Kylin-blog/tags/test/" style="font-size: 1.1em; color: #999">test</a> <a href="/Kylin-blog/tags/%E5%B0%8F%E8%AE%B0/" style="font-size: 1.37em; color: #99a4b2">小记</a> <a href="/Kylin-blog/tags/%E8%84%9A%E6%9C%AC/" style="font-size: 1.23em; color: #999ea6">脚本</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/Kylin-blog/archives/2024/01/"><span class="card-archive-list-date">一月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/Kylin-blog/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/Kylin-blog/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">15</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">10.1k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-01-06T13:56:06.301Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/lxKylin/blog-pic@img/uPic/fujianjian.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By Kylin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/Kylin-blog/js/utils.js"></script><script src="/Kylin-blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["平庸是因为没有勇气做难事","要去看更广阔的天空"])
+  } else {
+    document.getElementById("subtitle").textContent = "平庸是因为没有勇气做难事"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/Kylin-blog/js/search/local-search.js"></script></div></div></body></html>
